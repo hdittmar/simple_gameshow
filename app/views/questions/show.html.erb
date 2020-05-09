@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Games:</strong>
+  <%= @question.games_id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @question.title %>
+</p>
+
+<p>
+  <strong>Correct option:</strong>
+  <%= @question.correct_option %>
+</p>
+
+<p>
+  <strong>Incorrect option 1:</strong>
+  <%= @question.incorrect_option_1 %>
+</p>
+
+<p>
+  <strong>Incorrect option 2:</strong>
+  <%= @question.incorrect_option_2 %>
+</p>
+
+<p>
+  <strong>Incorrect option 3:</strong>
+  <%= @question.incorrect_option_3 %>
+</p>
+
+<p>
+  <strong>Correct guess:</strong>
+  <%= @question.correct_guess %>
+</p>
+
+<p>
+  <strong>Question type:</strong>
+  <%= @question.question_type %>
+</p>
+
+<p>
+  <strong>Done:</strong>
+  <%= @question.done %>
+</p>
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', questions_path %>

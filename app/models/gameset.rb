@@ -1,0 +1,2 @@
+class Gameset < ApplicationRecord
+end

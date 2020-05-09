@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Gamesets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Game</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gamesets.each do |gameset| %>
+      <tr>
+        <td><%= gameset.title %></td>
+        <td><%= gameset.game_id %></td>
+        <td><%= link_to 'Show', gameset %></td>
+        <td><%= link_to 'Edit', edit_gameset_path(gameset) %></td>
+        <td><%= link_to 'Destroy', gameset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gameset', new_gameset_path %>
